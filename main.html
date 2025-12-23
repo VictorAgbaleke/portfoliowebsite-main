@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balek's Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/8a6bc4eb2e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header class="header-main">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <img src="images/logo1.png" alt="Victor Agbaleke Logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="box-header-items">
+            <div class="profile-picture">
+                <img src="images/profile-picture.png" alt="">
+            </div>
+
+            <div class="box-header-text">
+                <h2>Hi, I’m Victor</h2>
+                <h1>Full-Stack Web Developer</h1>
+                <h2>I build clean, scalable, user-focused web experiences</h2>
+                <button class="contact-button">
+                    <a href="#contacts">Contact Me</a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-content">
+
+        <!-- ABOUT -->
+        <section class="main-aboutme">
+
+            <p id="aboutme">
+                I’m a Computer Science graduate with a strong focus on front-end development and user experience.
+                I enjoy turning complex ideas into clean, intuitive web applications using JavaScript, HTML, CSS and python. I care deeply about performance, accessibility, and writing code that is easy
+                to maintain and scale. My goal is to build products that feel effortless to use while solving
+                real problems.
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="main-projects" id="projects">
+            <div class="main-header-text">
+                <h1>FEATURED PROJECTS</h1>
+                <h2>Selected work I’m proud of</h2>
+            </div>
+
+            <div class="projects-slider">
+                <button class="slider-btn left" id="prevBtn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <div class="slider-window">
+                    <div class="slider-track">
+
+                        <!-- SLIDE 1 -->
+                        <div class="project-slide">
+                            <a class="project-card" href="https://github.com/VictorAgbaleke/Des-Program">
+                                <h3>DES Program</h3>
+                                <div class="card-icons"><i class="fa-solid fa-c"></i></div>
+                            </a>
+
+                            <a class="project-card" href="https://github.com/VictorAgbaleke/todolist">
+                                <h3>To-Do App</h3>
+                                <div class="card-icons">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </a>
+
+                            <a class="project-card" href="https://github.com/VictorAgbaleke/myportfolio">
+                                <h3>Portfolio v1</h3>
+                                <div class="card-icons">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </a>
+
+                            <a class="project-card" href="https://github.com/VictorAgbaleke/Quasar-game">
+                                <h3>Quasar Game</h3>
+                                <div class="card-icons"><i class="fa-solid fa-c"></i></div>
+                            </a>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="project-slide">
+                            <a class="project-card" href="#">
+                                <h3>Powerlifting Website</h3>
+                                <div class="card-icons">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </a>
+
+                            <a class="project-card" href="#">
+                                <h3>Trainer Website</h3>
+                                <div class="card-icons">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </a>
+
+                            <a class="project-card" href="#">
+                                <h3>Coming Soon</h3>
+                                <div class="card-icons"><i class="fa-solid fa-code"></i></div>
+                            </a>
+
+                            <a class="project-card" href="#">
+                                <h3>Coming Soon</h3>
+                                <div class="card-icons"><i class="fa-solid fa-code"></i></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="slider-btn right" id="nextBtn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-box1">
+            <div class="footer-logo">
+                <img src="images/logo1.png" alt="">
+            </div>
+
+            <div id="contacts">
+                <h1>Contacts</h1>
+
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/victor-agbaleke-414549201">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-agbaleke-414549201">LinkedIn</a>
+                </div>
+
+                <div class="github-icon">
+                    <a href="https://github.com/VictorAgbaleke">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/VictorAgbaleke">Github</a>
+                </div>
+
+                <div class="phone-icon">
+                    <a href="tel:+14033930488">
+                        <i class="fa-solid fa-phone none-link"></i>
+                    </a>
+                    <a href="tel:+14033930488">Phone</a>
+                </div>
+
+                <div class="email-icon">
+                    <a href="mailto:balekvictor@icloud.com">
+                        <i class="fa-solid fa-envelope none-link"></i>
+                    </a>
+                    <a href="mailto:balekvictor@icloud.com">Email</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-box2">
+            <p class="copyright">
+                Copyright © Victor Agbaleke. All rights reserved.
+            </p>
+        </section>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

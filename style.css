@@ -1,0 +1,351 @@
+/* ---------------- GLOBAL ---------------- */
+
+body {
+    background-color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+    color: #ffffff;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.header-main {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(images/header-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAV */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(31,31,31,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    opacity: 0.7;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: #D13E3E;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HERO CONTENT */
+.box-header-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-picture {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+.box-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-header-text h1 {
+    font-weight: bold;
+}
+
+.contact-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #D13E3E;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 0 10px #D13E3E;
+    transition: transform 0.2s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- MAIN ---------------- */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ABOUT */
+
+.main-aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#aboutme {
+    max-width: 700px;
+    width: 100%;
+    padding: 16px;
+    font-family: "Roboto Flex", sans-serif;
+    color: #ffffff;
+    opacity: 0.7;
+    line-height: 1.7;
+    text-align: center;
+    transition: opacity 0.4s ease;
+}
+
+
+#aboutme:hover {
+    opacity: 1;
+}
+
+/* ---------------- PROJECTS ---------------- */
+
+.main-projects {
+    margin-top: 20px;
+}
+
+.main-header-text h1 {
+    color: #D13E3E;
+    font-size: 30px;
+}
+
+.main-header-text h2 {
+    opacity: 0.5;
+}
+
+/* Slider */
+.projects-slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.slider-window {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.project-slide {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Cards */
+.project-card {
+    height: 150px;
+    background-color: #100f0f;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    opacity: 1;
+    background-color: #D13E3E;
+    transform: translateY(-6px);
+}
+
+.project-card h3 {
+    font-size: 16px;
+}
+
+.card-icons {
+    font-size: 26px;
+    color: #1F1F1F;
+}
+
+/* Buttons */
+.slider-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #D13E3E;
+    cursor: pointer;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-box1 {
+    display: flex;
+    gap: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#contacts h1 {
+    color: #D13E3E;
+    font-size: 20px;
+}
+
+.linkedin-icon,
+.github-icon,
+.phone-icon,
+.email-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.linkedin-icon:hover,
+.github-icon:hover,
+.phone-icon:hover,
+.email-icon:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+#contacts i {
+    color: #D13E3E;
+    font-size: 18px;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 13px;
+    opacity: 0.45;
+    color: #D13E3E;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .main-aboutme {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project-slide {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-box1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box-header-text h1 {
+        font-size: 20px;
+    }
+
+    #aboutme {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card {
+        height: auto;
+    }
+
+    .nav-bar {
+        padding: 15px;
+    }
+}
