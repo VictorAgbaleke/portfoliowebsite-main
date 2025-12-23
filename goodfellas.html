@@ -134,37 +134,55 @@
             opacity: 0.75;
         }
 
-        /* -------- RESPONSIVE -------- */
-        @media (max-width: 768px) {
-            .case-study {
-                flex-direction: column;
-                text-align: center;
-                gap: 40px;
-            }
+@media (max-width: 900px) {
+    .case-study {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
 
-            .case-images img {
-                width: 100%;
-                max-width: 400px;
-            }
+    .case-text {
+        max-width: 85%;
+    }
 
-            .case-text {
-                max-width: 90%;
-            }
+    .header-small h1 {
+        font-size: 28px;
+    }
+}
 
-            .nav-links {
-                gap: 16px;
-            }
-        }
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 14px;
+    }
 
-        @media (max-width: 480px) {
-            .header-small h1 {
-                font-size: 24px;
-            }
+    .nav-links a {
+        font-size: 12px;
+    }
 
-            .header-small h2 {
-                font-size: 14px;
-            }
-        }
+    .header-small {
+        padding-top: 100px;
+    }
+
+    .header-small h1 {
+        font-size: 22px;
+    }
+
+    .header-small h2 {
+        font-size: 14px;
+    }
+
+    .case-study {
+        margin: 60px 0;
+    }
+
+    .case-text {
+        max-width: 100%;
+    }
+
+    .case-text p {
+        font-size: 14px;
+   
     </style>
 </head>
 
