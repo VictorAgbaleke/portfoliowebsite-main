@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Case Study</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap" rel="stylesheet">
+
+    <style>
+        /* -------- GLOBAL -------- */
+        body {
+            background-color: #1F1F1F;
+            margin: 0;
+            font-family: "Roboto Flex", sans-serif;
+            color: #ffffff;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* -------- NAV -------- */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(31, 31, 31, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .nav-logo img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            opacity: 0.7;
+            position: relative;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0%;
+            height: 2px;
+            background-color: #D13E3E;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* -------- HEADER -------- */
+        .header-small {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .header-small h1 {
+            font-size: 32px;
+            color: #D13E3E;
+        }
+
+        .header-small h2 {
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+        /* -------- CASE STUDY -------- */
+        .case-study {
+            display: flex;
+            gap: 80px;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .case-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .case-images img {
+            width: 320px;
+            border-radius: 12px;
+            opacity: 0.85;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .case-images img:hover {
+            opacity: 1;
+            transform: scale(1.02);
+        }
+
+        .case-text {
+            max-width: 420px;
+        }
+
+        .case-text p {
+            line-height: 1.7;
+            opacity: 0.75;
+        }
+
+        /* -------- RESPONSIVE -------- */
+        @media (max-width: 768px) {
+            .case-study {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .case-images img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .case-text {
+                max-width: 90%;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-small h1 {
+                font-size: 24px;
+            }
+
+            .header-small h2 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!-- NAV -->
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <img src="images/logo1.png" alt="Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contacts">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header-small">
+        <div>
+            <h1>"GoodFellas" The Movie </h1>
+            <h2>Custom Poster design and Advertising Movie Premiere</h2>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="case-study">
+            <div class="case-images">
+                <img src="images/insta_post.png" alt="Project image 1">
+                <img src="images/movie_poster.png" alt="Project image 2">
+                <img src="images/web_hero.png" alt="Project image 3">
+            </div>
+
+            <div class="case-text">
+                <p>
+This project focused on designing a customized Goodfellas poster, website hero, and Instagram post with a strong visual identity. The goal was to translate a classic film aesthetic into modern, eye-catching designs using Adobe Photoshop, Illustrator, and Lightroom. Throughout the design process, I created most visual elements from scratch and incorporated a small number of locally sourced images, prioritizing consistency, visual impact, and polished presentation across all deliverables.
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+</div>
+</body>
+</html>
